@@ -34,7 +34,7 @@ class Company {
 
     listEmployees(){
         this.employees.forEach (emp => {
-            console.log(employee.describe());
+            console.log(emp.describe());
         });
     }
 }
