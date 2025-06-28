@@ -8,3 +8,12 @@ class Employee {
     }
 }
 
+class Manager extends Employee {
+    constructor (name, department, teamSize) {
+        super(name, department);
+        this.teamSize = teamSize;
+    }
+    describe(){
+        return `${this.name} manages a team of ${this.teamSize} in this ${this.department}`
+    }
+}
