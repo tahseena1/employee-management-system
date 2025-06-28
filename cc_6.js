@@ -32,9 +32,18 @@ class Company {
         this.employees.push(employee);
     }
 
-    listEmployees(employee){
+    listEmployees(){
         this.employees.forEach (emp => {
             console.log(employee.describe());
         });
     }
 }
+
+const dunderMifflinScranton = new Company();
+
+dunderMifflinScranton.addEmployee(emp1);
+dunderMifflinScranton.addEmployee(emp2);
+dunderMifflinScranton.addEmployee(emp3);
+dunderMifflinScranton.addEmployee(mngr1);
+
+dunderMifflinScranton.listEmployees();
